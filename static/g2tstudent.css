@@ -1,0 +1,1323 @@
+html {
+    background-color: #EEEEE7;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: normal 12px arial, verdana, helvetica;
+    margin: 0;
+    padding-top: 10px;
+}
+a, a:active, a:visited, h2 {
+    color: #369;
+}
+input[type="text"], input[type="email"], select, textarea {
+    background-color: #F0F6FB;
+    border: none;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+ol {
+    margin: 0;
+    padding: 0;
+}
+ol li {
+    list-style: none;
+}
+pre {
+    font: normal 12px arial, verdana, helvetica;
+    white-space: pre-wrap;
+}
+legend, fieldset {
+    display: none;
+}
+#header {
+    background-color: #ADADAD;
+    border: 2px solid #CCC;
+    -moz-border-radius: 9px 9px 0 0;
+    -webkit-border-radius: 9px 9px 0 0;
+    border-radius: 9px 9px 0 0;
+    float: left;
+    width: 100%;
+}
+#header h1 {
+    color: #FFF;
+    font: normal 30px arial, verdana, helvetica;
+    margin: 20px 60px;
+    padding: 0;
+}
+#header .logo h1 {
+    float: left;
+    font-size: 26px;
+    margin: 30px 10px 10px 60px;
+    width: 410px;
+}
+#header .logo div {
+    float: right;
+    margin: 8px 20px;
+}
+#container {
+    margin: 0 auto;
+    width: 690px;
+}
+#content {
+    background: #FFF;
+    border-left: 2px solid #CCC;
+    border-right: 2px solid #CCC;
+    float: left;
+    min-height: 300px;
+    padding: 0 60px 20px;
+    width: 570px;
+}
+#footer {
+    background: #FFF;
+    border: 2px solid #CCC;
+    -moz-border-radius: 0 0 9px 9px;
+    -webkit-border-radius: 0 0 9px 9px;
+    border-radius: 0 0 9px 9px;
+    color: #666;
+    float: left;
+    font-size: 11px;
+    padding: 0;
+    width: 100%;
+}
+#footer #copyright {
+    background: url(../images/g2t-logo-small.png) no-repeat right 13px;
+    margin-right: 15px;
+    padding: 15px 0 15px 15px;
+}
+#footer #copyright p {
+    margin: 0;
+    padding-right:16em;
+    padding-bottom:0.5em;
+}
+#footer #copyright a, #footer #copyright a:active, #footer #copyright a:visited {
+    color: #666;
+	display: inline;
+}
+#post-footer {
+    color: #666;
+    float: left;
+    font-size: 11px;
+    padding: 0;
+    width: 694px;
+}
+#post-footer #privacyNotice {
+    padding: 0 40px;
+}
+#post-footer #privacyNotice p {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+#post-footer #privacyNotice p a {
+    color: #333;
+}
+#companyLogo {
+    clear: both;
+    float: left;
+    margin: 25px auto 20px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+div.formField {
+    margin-bottom: 12px;
+}
+div.required label {
+    background: transparent url(../images/required.gif) no-repeat 0 3px;
+    padding-left: 8px;
+}
+div.even {
+    clear: both;
+    float: left;
+    width: 47%;
+}
+div.odd {
+    float: right;
+    width: 47%;
+}
+li.error {
+    list-style-image: url(../images/error_icon_pulse.gif);
+}
+li.error, label.error {
+    color: #a94442;;
+}
+p.required {
+    background: transparent url(../images/required.gif) no-repeat 0 11px;
+    clear: both;
+    padding: 8px 0 0 8px;
+}
+p.fieldError {
+    color: #a94442;;
+    font: normal 13px verdana, helvetica, arial;
+    background: url("../images/red-arrow.png") no-repeat 0 0;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 9px;
+    padding: 0 0 2px 15px;
+    margin: 10px 0 0 0;
+}
+.fieldErrors {
+    color: #a94442;;
+    font-size: 11px;
+}
+h3.fieldErrors {
+    background: transparent url(../images/error_icon_pulse.gif) no-repeat 0 0;
+    font-weight: bold;
+    line-height: 16px;
+    margin: 0;
+    padding: 0 0 0 24px;
+    clear: both;
+}
+ul.fieldErrors {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 16px;
+}
+ul.fieldErrors li {
+    font-size: 11px;
+    padding: 0 0 0 44px;
+}
+div.maxCharPopup {
+    background-color: #FFE2B0;
+    border: 1px solid #F5B201;
+    font-size: 11px;
+    height: 12px;
+    margin-top: 4px;
+    position: absolute;
+    z-index: 10;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.hide, span.springMessage {
+    display: none;
+}
+.show {
+    display: block;
+}
+.userWarning, .infoMessage {
+    background: #FFD url(../images/warning-message-icon.gif) no-repeat 7px 7px;
+    border: 1px solid #F6C1AF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 569px;
+    min-height: 45px;
+}
+.infoMessage {
+    background: #EFF4FF url(../images/info-icon.gif) no-repeat 7px 7px;
+    border: 1px solid #A9C4F5;
+}
+.infoNotice {
+    background: url(../images/MiniInfoIcon.png) no-repeat;
+    min-height: 18px;
+}
+.infoNotice p {
+    padding-left: 20px;
+    padding-top: 3px;
+}
+.userWarning p, .userWarning ul, .userWarning h2, .infoMessage p, .infoMessage ul {
+    margin: 7px;
+    padding-left: 45px;
+}
+.userWarning ul li, .infoMessage ul li {
+    list-style: outside disc none;
+    margin-left: 15px;
+}
+.tip {
+    border: 2px solid #FFF;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 423px;
+    z-index: 15;
+}
+.tip .left {
+    background: transparent url(/images/tooltip-carat.gif) no-repeat scroll 0 -47px;
+    height: 24px;
+    margin: -34px 0 0 -19px;
+    position: absolute;
+    width: 20px;
+}
+.tip .right {
+    background: transparent url(/images/tooltip-carat.gif) no-repeat scroll 0 -74px;
+    height: 24px;
+    margin: -34px 0 0 422px;
+    position: absolute;
+    width: 20px;
+}
+.tip .top {
+    background: transparent url(/images/tooltip-carat.gif) no-repeat scroll 0 0;
+    height: 20px;
+    margin: -99px 0 0 34px;
+    position: absolute;
+    width: 24px;
+}
+.tip .bottom {
+    background: transparent url(/images/tooltip-carat.gif) no-repeat scroll 0 -24px;
+    height: 20px;
+    margin: -1px 0 0 34px;
+    position: absolute;
+    width: 24px;
+}
+.tip .content {
+    background-color: #F5F7FA;
+    border: 1px solid #656565;
+    font-size: 11px;
+    margin: 0;
+    overflow: hidden;
+    padding: 14px;
+}
+.tip .content a.close {
+    background: transparent url(/images/exit.gif) no-repeat 0 0;
+    display: block;
+    float: right;
+    height: 0;
+    overflow: hidden;
+    padding-top: 16px;
+    width: 16px;
+}
+.tip .content h3 {
+    color: #036;
+    font-size: 14px;
+    padding-bottom: 6px;
+}
+.infoBalloon {
+    width: 250px;
+}
+.infoBalloon .content {
+    background-color: #FFF;
+    font-size: 11px;
+}
+.infoBalloon .content a.close {
+    display: none;
+}
+.infoBalloon .left {
+    background-position: -29px -47px;
+}
+.infoBalloon .right {
+    background-position: -29px -74px;
+}
+.trainingTimesBox {
+    background-color: #EFEFEF;
+    border: 1px solid #CCC;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    margin: 10px 0 20px;
+    padding: 7px;
+    width: 526px;
+}
+.trainingTimesBox span {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+}
+.trainginTimesBox, span.dateTime {
+	display: block;
+	font-style: normal;
+	font-weight: normal;
+}
+ol.trainingTimes li {
+    list-style: none;
+}
+ol.trainingTimes li.past {
+    color: #A0A0A0;
+}
+.flush-bottom {
+    margin-bottom: 0;
+}
+.flush-top {
+    margin-top: 0;
+}
+.clear {
+    clear: both;
+}
+.message-banner {
+    background: #FFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 1px;
+}
+.banner-content {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    min-height: 36px;
+    padding-top: 17px;
+}
+.banner-content ul {
+    margin: -7px 0 0;
+    padding: 0 17px 12px 70px;
+}
+.banner-content p {
+    margin: 0;
+    padding: 0 17px 12px 57px;
+}
+.banner-content a {
+    color: #06C;
+    text-decoration: none;
+}
+.confirmation-banner {
+    border: 1px solid #7FCB3A;
+}
+.confirmation-banner .banner-content {
+    background: #DCF3C1 url('/images/icon-check.png') no-repeat 14px 11px;
+}
+.information-banner {
+    border: 1px solid #84B9F8;
+}
+.information-banner .banner-content {
+    background: #DBEEFB url('/images/icon-info.png') no-repeat 14px 11px;
+}
+.error-banner {
+    border: 1px solid #FF686D;
+}
+.error-banner .banner-content {
+    background: #FFCFD2 url('/images/icon-error.png') no-repeat 14px 11px;
+}
+.warning-banner {
+    border: 1px solid #FFC346;
+}
+.warning-banner .banner-content {
+    background: #FFFD9C url('/images/icon-warning.png') no-repeat 14px 11px;
+}
+#joinTraining span, #joinTrainingActiveX span, #joinTrainingInstallActiveX span {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#joinTraining #instruction, #joinTrainingActiveX #instruction {
+    margin-top: 0;
+    padding-bottom: 8px;
+}
+#joinTraining #content div, #joinTrainingActiveX #content div {
+    margin: 0 auto 25px;
+    padding: 15px;
+    text-align: center;
+    width: 420px;
+}
+#joinTraining #content div#companyLogo {
+    margin-left: -40px;
+    width: 600px;
+}
+#joinTraining #appletContainer {
+    border: 1px solid #CCC;
+}
+#joinTrainingInstallActiveX #content div {
+    border: 1px solid #090;
+    margin: 0 auto 25px;
+    padding: 0;
+    text-align: center;
+    width: 320px
+}
+#joinTraining #content p.last-child, #joinTrainingManual #content p.last-child,
+#joinTrainingActiveX #content p.last-child, #joinTrainingClickOnce #content p.last-child,
+#joinTrainingInstallActiveX #content p.last-child {
+    background: transparent url(../images/arrow_info.gif) no-repeat 0 15px;
+    border-top: 1px dotted #CCC;
+    padding: 0 35px;
+}
+#joinTrainingManual #content div, #joinTrainingClickOnce #content div {
+    margin-bottom: 25px;
+    text-align: center;
+}
+#joinTrainingManual span, #joinTrainingClickOnce span {
+    display: block;
+    margin-top: 10px;
+}
+#joinTrainingClickOnce #downloadSoftware, #joinTrainingClickOnce #downloadingSoftware {
+    height: 22px;
+}
+#catalog h3 {
+    font-size: 16px;
+    margin: 10px 0 8px;
+}
+#catalog .tip h3 {
+    margin-top: 0;
+}
+#catalog .trainingContent {
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+#catalog .trainingDescription {
+    margin-bottom: 0;
+    height: 30px;
+    overflow: hidden;
+}
+#catalog .trainingDescriptionMore {
+    margin-bottom: 5px;
+}
+#catalog .trainingTimes {
+    float: left;
+    width: 435px;
+}
+#catalog .registerButton {
+    float: right;
+}
+#catalog .registerButton .registerForTraining {
+    font-size: 11px;
+    overflow: visible;
+    padding: 0 3px;
+    width: auto;
+}
+#catalog h3 span {
+    color: #369;
+}
+#catalog form p.recurringDesc {
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+#catalog .recurringTimesBox {
+    float: left;
+    width: 420px;
+}
+#catalog .recurringTimesBox select {
+    width: 420px;
+}
+html[lang^="de"] #catalog .recurringTimesBox,
+html[lang^="de"] #catalog .recurringTimesBox select,
+html[lang^="es"] #catalog .recurringTimesBox,
+html[lang^="es"] #catalog .recurringTimesBox select,
+html[lang^="fr"] #catalog .recurringTimesBox,
+html[lang^="fr"] #catalog .recurringTimesBox select,
+html[lang^="it"] #catalog .recurringTimesBox,
+html[lang^="it"] #catalog .recurringTimesBox select {
+    width: 400px;
+}
+#catalog .training {
+    clear: both;
+}
+#catalog #catalog-header {
+    border-bottom: 1px solid #999;
+    float: left;
+    margin: 14px 0;
+    width: 100%;
+}
+#catalog #catalog-header a {
+    float: right;
+    margin: 0;
+}
+#catalog #catalog-header h2 {
+    color: #595959;
+    float: left;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+#trainingMaterials h3 {
+
+}
+#trainingMaterials #materialList {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+}
+#trainingMaterials #materialList li.material {
+    background: transparent url(../images/materials/icon-unknown.gif) no-repeat top left;
+    min-height: 36px;
+    padding-bottom: 28px;
+}
+#trainingMaterials #materialList li.material a {
+    color: #155BA1;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 0 0 44px;
+}
+#trainingMaterials #materialList li.material span {
+    display: block;
+    padding: 4px 0 0 44px;
+    word-wrap: break-word;
+    
+}
+#trainingMaterials #materialList li.text_html {
+    background-image: url(../images/materials/icon-web.gif);
+}
+#trainingMaterials #materialList li.application_pdf {
+    background-image: url(../images/materials/icon-pdf.gif);
+}
+#trainingMaterials #materialList li.application_msword {
+    background-image: url(../images/materials/icon-doc.gif);
+}
+#trainingMaterials #materialList li.application_vnd-ms-excel {
+    background-image: url(../images/materials/icon-xls.gif);
+}
+#trainingMaterials #materialList li.application_vnd-ms-powerpoint {
+    background-image: url(../images/materials/icon-ppt.gif);
+}
+#trainingMaterials #materialList li.video_x-ms-wmv {
+    background-image: url(../images/materials/icon-wmv.gif);
+}
+#trainingMaterials #materialList li.video_quicktime {
+    background-image: url(../images/materials/icon-mov.gif);
+}
+#registration #registrationFields {
+    border-bottom: 1px dotted #CCC;
+    padding-bottom: 24px;
+}
+#registration label, #registrationOffline label {
+    display: inline;
+}
+#registration select {
+    width: 270px;
+}
+#registration #studentInformation {
+    border-top: 1px solid #999;
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+#registration #customQuestions {
+    border: 1px dotted #CCC;
+    border-style: dotted none;
+    clear: both;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+#registration #customQuestions input, #registration #customQuestions select {
+    width: 100%;
+}
+#registration textarea {
+    font: normal 11px Arial,Verdana,Helvetica;
+    height: 68px;
+    width: 100%;
+}
+#registration #comments textarea {
+    height: 108px;
+}
+#registration #requiredInfo {
+    background: transparent url(../images/required.gif) no-repeat 0 3px;
+    margin: 12px 0 0;
+    padding-left: 8px;
+}
+#registration div.sectionFooter, #recordingRegistration div.sectionFooter {
+    text-align: left;
+}
+#registration div.sectionFooter p {
+    padding-top: 10px;
+}
+#registration div.sectionFooter a.questionMark {
+    vertical-align: middle;
+}
+#registration label.symphony-button {
+    display: inline-block;
+}
+#registration div.formField input, #recordingRegistration div.formField input {
+    width: 100%;
+}
+#registration .registrationWarning, .instructions {
+    font-size: 11px;
+    margin-bottom: 0;
+}
+#registration .trainingTimesBox, #registrationConfirmation .trainingTimesBox, #registrationOffline .trainingTimesBox, #paymentOptions .trainingTimesBox {
+    width: 555px;
+}
+#registration a.questionMark {
+    background: #FFF url(../images/qmark.gif) no-repeat;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+}
+#registration #recurringTrainingTimesBox span.recurring-instructions {
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+#registration #recurringTrainingTimesBox select {
+    width: 380px;
+}
+#registration #recurring-time-select, #registration #tr-inner #tr-time-list {
+    float: left;
+    width: 380px;
+}
+html[lang^="de"] #registration #tr-inner #tr-time-list,
+html[lang^="es"] #registration #tr-inner #tr-time-list,
+html[lang^="fr"] #registration #tr-inner #tr-time-list,
+html[lang^="it"] #registration #tr-inner #tr-time-list {
+    width: 310px;
+}
+html[lang^="de"] #registration #recurringTrainingTimesBox select,
+html[lang^="es"] #registration #recurringTrainingTimesBox select,
+html[lang^="fr"] #registration #recurringTrainingTimesBox select,
+html[lang^="it"] #registration #recurringTrainingTimesBox select,
+html[lang^="de"] #registration #recurring-time-select,
+html[lang^="es"] #registration #recurring-time-select,
+html[lang^="fr"] #registration #recurring-time-select,
+html[lang^="it"] #registration #recurring-time-select {
+    width: 400px;
+}
+#registration #recurringTrainingTimesBox #tz-btn, #registration #tr-inner #tz-btn {
+    float: right;
+}
+html[lang^="de"] #registration #recurringTrainingTimesBox #tz-btn,
+html[lang^="es"] #registration #recurringTrainingTimesBox #tz-btn,
+html[lang^="fr"] #registration #recurringTrainingTimesBox #tz-btn,
+html[lang^="it"] #registration #recurringTrainingTimesBox #tz-btn {
+    clear: both;
+    float: none;
+    padding-top: 10px;
+}
+#registration #course-inner {
+    position: relative;
+}
+#registration #course-inner #tz-btn {
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+}
+#registration #timezone-modal select, #catalog #timezone-modal select {
+    width: 270px;
+}
+#registration #timezone-modal p, #catalog #timezone-modal p {
+    margin: 0;
+}
+#registrationConfirmation .trainingTimesBox {
+    margin-top: 0;
+}
+#registrationConfirmation a#contactEmail, #registrationConfirmation a#joinURL {
+    display: block;
+}
+#registrationConfirmation #paymentLinks a#receipt {
+    margin-right: 8px;
+}
+#registrationConfirmation #paymentLinks {
+    margin-bottom: 10px;
+}
+#registrationConfirmation .greyBlock {
+    background-color: #EEE;
+    font: bold 16px arial, verdana, helvetica, sans-serif;
+    margin: 10px 0;
+    padding: 15px 0;
+    text-align: center;
+}
+#registrationConfirmation h3 {
+    font-size: 12px;
+}
+#registrationConfirmation span.label {
+    font-weight: bold;
+}
+#registrationConfirmation div.section {
+    border-bottom: 1px solid #999;
+    padding-bottom: 25px;
+}
+#registrationConfirmation div.section h3 {
+    font-size: 15px;
+    margin: 0 0 5px;
+}
+#registrationConfirmation p.trainingTests {
+    margin: 0;
+    padding: 0;
+}
+#registrationConfirmation #trainingTests li {
+    margin: 5px;
+    padding-bottom: 5px;
+}
+#registrationConfirmation #trainingTests li:last-child {
+    padding-bottom: 10px;
+}
+#registrationConfirmation div.section.last {
+    border: none;
+}
+#registrationConfirmation #middleSection p {
+    margin-bottom: 0;
+}
+#registrationConfirmation #audioSection {
+    padding-top: 20px;
+}
+#registrationConfirmation #audioSection h3 {
+    color: #135AA0;
+}
+#registrationConfirmation #audioSection .column {
+    float: left;
+}
+#registrationConfirmation #audioSection #firstColumn, #registrationConfirmation #audioSection #thirdColumn {
+    width: 40%;
+}
+#registrationConfirmation #audioSection #secondColumn {
+    text-align: center;
+    width: 20%;
+}
+#registrationConfirmation #audioSection #secondColumn h2 {
+    padding-top: 12px;
+}
+#registrationConfirmation #audioSection #thirdColumn {
+    float: right;
+}
+#registrationLookup div.formField input, #trainingFull div.formField input {
+	width: 47%;
+}
+div.alreadyRegistered {
+	padding-top: 8px;
+	font-weight: normal;
+	clear: right;
+}
+#catalog div.alreadyRegistered {
+	text-align: right;
+}
+#questions {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#surveySubmission #questions, #takeTest #questions {
+    margin-top: 20px;
+}
+#questions li.question {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+#questions li.question ul, #questions li.question ol {
+    clear: both;
+    list-style-type: none;
+    margin: 5px 0 0 20px;
+}
+#questions li.question div.questionNumber {
+    display: block;
+    float: left;
+    width: 25px;
+}
+#questions li.question div.questionText {
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+    width: 520px;
+}
+#questions ol.mc li, #questions ol.ma li {
+    clear: both;
+    margin-top: 5px;
+    width: 100%;
+}
+#questions ul.tf, #questions ol.mc, #questions ol.ma {
+    font-weight: normal;
+    margin: -5px 0 0 -5px;
+    padding: 0;
+}
+#questions ul.tf li {
+    display: block;
+    margin: 5px 0;
+}
+#questions ol.mc li .mcRadio, #questions ol.mc li .mcRadio, #questions ol.ma li .maCheckbox, #questions ul.tf li .tfRadio {
+    float: left;
+    margin-top: -2px;
+}
+#questions ol.mc li label, #questions ol.ma li label, #questions ul.tf li label {
+    font-weight: normal;
+    margin-top: 0;
+    padding-left: 20px;
+}
+#questions span.optionIndex {
+    margin-right: 4px;
+    vertical-align: 2px;
+}
+#questions li.question div.rating {
+    float: left;
+    margin: 5px 0 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+#questions li.question .rating ul {
+    margin: 0;
+    padding: 0;
+}
+#questions li.question .rating ul li {
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 40px;
+}
+#questions ol.mc li .mcRadio, #questions ol.ma li .maCheckbox {
+    float: left;
+    margin-top: -2px;
+}
+#questions .question textarea {
+    height: 100px;
+    margin-left: 25px;
+    width: 550px;
+}
+#recordingView a.symphony-button {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+}
+#surveySubmission input.text, #surveySubmission textarea {
+    float: left;
+    margin: 5px 0 15px 25px;
+    width: 100%;
+}
+#surveySubmission label {
+    font-weight: normal;
+}
+#surveySubmission form, #takeTest form {
+    margin-top: 20px;
+}
+#surveySubmission textarea.essay {
+    height: 200px;
+}
+#surveySubmission #submit {
+    padding-top: 24px;
+    text-align: center;
+}
+#surveySubmission #prevPageButton {
+    float: left;
+    font-weight: bold;
+}
+#surveySubmission #nextPageButton {
+    float: right;
+    font-weight: bold;
+}
+#trainingOver h3 {
+    font-size: 12px;
+    font-weight: normal;
+}
+#trainingOver #trainingName {
+    font-weight: bold;
+}
+#takeTest #submit {
+    text-align: center;
+    padding-top: 24px;
+}
+#takeTest #submit #testSubmittedProgress {
+    background: transparent url(../images/progress.gif) no-repeat left center;
+    display: none;
+    height: 16px;
+    margin: 0 auto;
+    width: 16px;
+}
+#takeTest #prevPageButton {
+    float: left;
+    font-weight: bold;
+}
+#takeTest #nextPageButton {
+    float: right;
+    font-weight: bold;
+}
+#testResultScore #percentage, #testResultFull #percentage {
+    font-weight: bold;
+    padding-left: 4px;
+}
+#testResultScore #numCorrect {
+    font-weight: bold;
+}
+#testResultFull pre {
+    display: inline;
+    float: none;
+}
+#testResultFull #scoreLabel {
+    font-weight: bold;
+}
+#testResultFull #submitMessage {
+    border-bottom: 1px solid #999;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+#testResultFull #score {
+    float: right;
+}
+#testResultFull #shortAnswerNote {
+    color: #666;
+    font-size: 10px;
+    margin-bottom: 0;
+    text-align: right;
+}
+#testResultFull #student {
+    margin-bottom: 10px;
+}
+#testResultFull #student p {
+    clear: both;
+    margin: 0;
+    padding: 4px 0 0;
+}
+#testResultFull #student p em {
+    display: block;
+    float: left;
+    font-style: normal;
+    font-weight: bold;
+    padding-right: 10px;
+    text-align: right;
+    width: 100px;
+}
+#testResultFull #questions {
+    border-bottom: 1px solid #999;
+    padding: 10px 0 10px 45px;
+}
+#testResultFull #questions li.question {
+    font-weight: bold;
+    list-style-type: decimal;
+}
+#testResultFull #questions .graded {
+    margin: 0 0 5px -20px;
+}
+#testResultFull #questions .graded p.gradedShortAnswer {
+    padding-left: 20px;
+}
+#testResultFull #questions li.question ul {
+    list-style-type: none;
+    margin: 5px 0 0 -20px;
+}
+#testResultFull #questions li.question ul li {
+    padding-bottom: 5px;
+}
+#testResultFull #questions li.option {
+    font-weight: normal;
+}
+#testResultFull #questions li.correct {
+    color: #090;
+    font-weight: bold;
+}
+#testResultFull #questions .redx {
+    background: url(../images/incorrect_X.gif) no-repeat;
+    float: left;
+    height: 11px;
+    margin: 3px 0 0 -45px;
+    position: relative;
+    width: 20px;
+}
+#testResultFull #questions li.selected {
+    color: #a94442;;
+    font-weight: bold;
+}
+#testResultFull #questions li.mc, #testResultFull #questions li.ma {
+    list-style-type: lower-alpha;
+    margin-left: 18px;
+}
+#testResultFull #questions li.tf {
+    list-style-type: none;
+}
+#testResultFull #questions span.optionIndex {
+    margin-right: 4px;
+}
+#testInProgress p {
+    font-weight: bold;
+    text-align: center;
+}
+#subscription em {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+}
+#subscription label {
+    display: inline;
+    font-weight: normal;
+}
+#subscription .radio {
+    display: inline;
+}
+#subscription .radio input {
+    margin: 0;
+}
+#masterTestResults #content {
+    float: left;
+    padding: 20px 40px 0;
+}
+#masterTestResults h2 {
+    color: #000;
+    float: left;
+    font: bold 16px arial, verdana, helvetica;
+    margin: 0;
+}
+#masterTestResults h2.correct {
+    float: right;
+    font-size: 18px;
+}
+#masterTestResults .correct {
+    color: #090;
+    font-weight: bold;
+}
+#masterTestResults #questions {
+    clear: both;
+    padding-top: 15px;
+}
+#masterTestResults #questions li.question, #masterTestResults #questions li.question .questionItem {
+    float: left;
+    font-weight: bold;
+}
+#masterTestResults #questions li.question .questionItem {
+    margin: 0;
+    width: 505px;
+}
+#masterTestResults #questions li.question .questionNum {
+    float: left;
+    padding-right: 12px;
+}
+#masterTestResults #questions li.question .questionText {
+    float: left;
+    width: 475px;
+}
+#masterTestResults #questions li.question .graded {
+    font-weight: normal;
+}
+#masterTestResults #questions li.question ul {
+    float: left;
+    margin: 0;
+    padding-left: 23px;
+}
+#masterTestResults #questions li.question ul li {
+    list-style-type: lower-alpha;
+    margin: 0 0 2px 18px;
+}
+#masterTestResults #questions li.question ul li.tf {
+    list-style-type: none;
+    margin-left: 0;
+}
+#masterTestResults .percentageBox {
+    background-color: #F2F8FC;
+    float: left;
+    font: bold 15px arial, verdana, helvetica;
+    margin-right: 10px;
+    padding: 3px 0;
+    position: relative;
+    text-align: center;
+    width: 70px;
+}
+#masterTestResults .percentageBox span.label {
+    display: block;
+    font: normal 11px arial, verdana, helvetica;
+}
+#masterTestResults #footer {
+    clear: both;
+}
+#confCallNumbers #container {
+    width: 800px;
+}
+#confCallNumbers #content {
+    padding: 20px 25px;
+    width: 745px;
+}
+#confCallNumbers #header, #confCallNumbers #footer {
+    width: 795px;
+}
+#confCallNumbers #header h1 {
+    margin: 20px;
+}
+#confCallNumbers #header .logo h1 {
+    margin: 30px 10px 10px 20px;
+}
+#confCallNumbers #confCallNumbersList {
+    float: left;
+    margin-bottom: 15px;
+}
+#confCallNumbers ul.headerList, #confCallNumbers #confCallNumbersList ul {
+    float: left;
+    padding-left: 0;
+    width: 745px;
+}
+#confCallNumbers ul.headerList {
+    margin: 0 0 5px;
+}
+#confCallNumbers ul.headerList li {
+    font-weight: bold;
+}
+#confCallNumbers .odd {
+    background-color: #F7F7F7;
+}
+#confCallNumbers #confCallNumbersList ul {
+    border-bottom: 1px solid #C7C7C7;
+    margin: 0;
+    padding: 10px 0;
+}
+#confCallNumbers #confCallNumbersList ul:first-child {
+    border-top: 1px solid #C7C7C7;
+}
+#confCallNumbers #confCallNumbersList ul li, #confCallNumbers ul.headerList li {
+    float: left;
+    list-style: none outside none;
+}
+#confCallNumbers ul li.confCallCountry {
+    padding-left: 10px;
+    width: 140px;
+}
+#confCallNumbers ul li.confCallToll, #confCallNumbers ul li.confCallTollFree {
+    width: 150px;
+}
+#confCallNumbers ul li.notSupplied {
+    color: #595959;
+}
+#confCallNumbers ul li.confCallAccessCode {
+    width: 110px;
+}
+#backupNumbers .box {
+    background-color: #EFEFEF;
+    border: 1px solid #CCC;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 10px 0 20px;
+    padding: 7px;
+    width: 526px;
+}
+#backupNumbers .altNumbers p {
+    margin: 6px
+}
+#paymentOptions .message-banner {
+    margin-top: 15px;
+}
+#paymentOptions h2 {
+    margin-top: 25px;
+}
+#paymentOptions #paymentSummary {
+    margin-bottom: 0;
+}
+#paymentOptions #trainingPrice {
+    float: right;
+    font-size: 15px;
+}
+#paymentOptions .trainingTimes {
+    clear: both;
+}
+#paymentOptions .trainingTimesBox {
+    margin-top: 5px;
+}
+#paymentOptions ul {
+    clear: both;
+    list-style-position: inside;
+    margin: 0;
+    padding: 15px 0 0;
+}
+#paymentOptions #paypalArea #pp-checkout {
+    float: left;
+}
+#paymentOptions #cardtypes {
+    background: url('../images/cardtypes.png') no-repeat 0 0;
+    float: left;
+    height: 23px;
+    width: 245px;
+}
+#paymentOptions #paypalArea h2 {
+    margin-bottom: 5px;
+}
+#paymentOptions #contactEmail {
+    display: block;
+}
+#paymentOptions span.discounted {
+    font-weight: bold;
+}
+#paymentOptions #discountedPrice {
+    color: #666;
+    font-size: 11px;
+}
+#refundPolicy #policy {
+    margin-top: 20px;
+}
+#paymentReceipt #printSection {
+    text-align: right;
+}
+#paymentReceipt .trainingTimesBox {
+    width: 554px;
+    margin-top: 0
+}
+#paymentReceipt .trainingTimesBox h3 {
+    margin-top: 0;
+}
+#paymentReceipt .registrantInfo {
+    padding: 0;
+}
+#paymentReceipt .registrantInfo label {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    width: 45px;
+}
+#paymentReceipt .headerList {
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    float: left;
+    font: bold 12px arial,verdana,helvetica;
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+}
+#paymentReceipt li {
+    list-style: none;
+}
+#paymentReceipt .headerList li {
+    float: left;
+    padding-left: 5px;
+}
+#paymentReceipt .headerList .date {
+    padding-left: 10px;
+    width: 130px;
+}
+#paymentReceipt .headerList .description {
+    width: 330px;
+}
+#paymentReceipt .headerList.offer .description {
+    width: 240px;
+}
+#paymentReceipt .headerList .discount {
+    width: 90px;
+}
+#paymentReceipt .headerList .amount {
+    float: right;
+    padding-left: 0;
+    padding-right: 10px;
+    text-align: right;
+    width: 80px;
+}
+#paymentReceipt .paymentEntries {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+}
+#paymentReceipt .paymentEntries li {
+    clear: both;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #CCC;
+    padding: 5px 0;
+    width: 100%;
+}
+#paymentReceipt .paymentEntries li div {
+    display: inline-block;
+    padding-left: 5px;
+}
+#paymentReceipt .paymentEntries .date {
+    padding-left: 10px;
+    width: 127px;
+}
+#paymentReceipt .paymentEntries .description {
+    width: 327px;
+}
+#paymentReceipt .paymentEntries.offer .description {
+    width: 237px;
+}
+#paymentReceipt .paymentEntries .discount {
+    width: 87px;
+}
+#paymentReceipt .paymentEntries .amount {
+    float: right;
+    padding-left: 0;
+    padding-right: 10px;
+    text-align: right;
+    width: 80px;
+}
+#paymentReceipt .paymentEntries .amount span.REFUND, #paymentReceipt .paymentEntries .amount span.REVERSAL {
+    color: red;
+}
+#paymentReceipt .totalPaid {
+    font-size: 11px;
+    padding: 5px 10px 0 5px;
+    text-align: right;
+}
+#paymentReceipt .totalPaid label {
+    display: inline;
+    margin-right: 5px;
+}
+#paymentReceipt #paymentLinks {
+    margin: 15px 0;
+}
+.ui-dialog .modal-actions a {
+    text-decoration: none;
+}
+.ui-dialog .modal-actions a:hover {
+    text-decoration: underline;
+}

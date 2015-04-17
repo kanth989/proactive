@@ -1,0 +1,32 @@
+html {
+    background-color: white;
+}
+#header {
+    background-color: white;
+    border: none;
+}
+#header h1 {
+    color: black;
+}
+#content {
+    border-style: none;
+    border-bottom: 1px solid #888;
+}
+#footer {
+    border: none;
+}
+
+#paymentReceipt #printSection {
+    display: none;
+}
+#paymentReceipt .trainingTimesBox {
+    padding: 0;
+    border: none;
+}
+#paymentReceipt .headerList {
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+}
+#paymentReceipt .paymentEntries li {
+    border-bottom: 1px solid #888;
+}
